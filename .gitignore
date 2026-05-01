@@ -1,0 +1,28 @@
+# Node helper files (used solo for generating .docx files)
+node_modules/
+package.json
+package-lock.json
+*.html
+*.js
+
+# Generated docx and PNG mockups (no son parte del proyecto Swift)
+*.docx
+*.png
+
+# Carpetas temporales del workspace
+tarea2_unpacked/
+tarea2.md
+
+# macOS / Xcode
+.DS_Store
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# Entornos
+.env
+.env.local
+
+# Claude Code session state
+.claude/
