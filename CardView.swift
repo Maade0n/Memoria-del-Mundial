@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-typealias Card = CardView.Card
+// MARK: - CardView
+// Tarea 5: se elimino el `typealias Card = CardView.Card` que creaba una
+// auto-referencia circular y causaba fallos de compilacion en builds limpios.
 
 struct CardView: View {
     typealias Card = MemoryGame<String>.Card
