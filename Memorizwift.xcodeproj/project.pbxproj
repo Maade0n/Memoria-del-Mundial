@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0535D52D73FD9CC18E521F0B /* pre-applypatch.sample in Resources */ = {isa = PBXBuildFile; fileRef = F2FB3852FB7EDB8D62B91AFD /* pre-applypatch.sample */; };
+		15674E78B045A2DFE4C08A46 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.rev in Resources */ = {isa = PBXBuildFile; fileRef = 092199F5931A15E217EEAF76 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.rev */; };
+		1CB9C5A1A62D54B253297E71 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EBA85CCF83EEA2FADA557 /* CardView.swift */; };
+		2C236FC40E68EA29F43316B1 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24282306713BC3319BF6BC81 /* EmojiMemoryGame.swift */; };
+		337D3ADB2DEE201DDDD8DA61 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA921958A1BB968F3DEA946B /* EmojiMemoryGameView.swift */; };
+		34404C9D472D3592A9EA3A96 /* prepare-commit-msg.sample in Resources */ = {isa = PBXBuildFile; fileRef = E7AFB0027BD04F44E64187AF /* prepare-commit-msg.sample */; };
+		3776D7891CAE79DB81E3A931 /* update.sample in Resources */ = {isa = PBXBuildFile; fileRef = 14973FBD47327B2B8B548B34 /* update.sample */; };
+		3F48C32146DB22809E8506C7 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F979EE53764F8487A242045 /* Cardify.swift */; };
+		446CA7DEE354E67E506088B2 /* applypatch-msg.sample in Resources */ = {isa = PBXBuildFile; fileRef = 2B9C28E302DC75E6D8412ABC /* applypatch-msg.sample */; };
+		474F29A8872E8049A5B15C23 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F487BF5BD2071839F5936C /* AspectVGrid.swift */; };
+		4D0689553A67A52FE84A9513 /* pre-merge-commit.sample in Resources */ = {isa = PBXBuildFile; fileRef = 9E59A3E2497187F18ECC4AD4 /* pre-merge-commit.sample */; };
+		55148892968DDCE2EAF5534B /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FABC4A06BA0B20638CC62A0 /* Pie.swift */; };
+		5A08D2E95420C1875115AAF2 /* pre-commit.sample in Resources */ = {isa = PBXBuildFile; fileRef = 7AA844AC44846D43D6268822 /* pre-commit.sample */; };
+		6B9CC00419F1BC0082FFA6B0 /* commit-msg.sample in Resources */ = {isa = PBXBuildFile; fileRef = 9BAE7783AD7BC14FC576A896 /* commit-msg.sample */; };
+		73FCBA8B3797B4BBAD631ED7 /* pre-receive.sample in Resources */ = {isa = PBXBuildFile; fileRef = B5D48F22501C727D314A58CC /* pre-receive.sample */; };
+		971F1E43380BCE57A9197AA0 /* post-update.sample in Resources */ = {isa = PBXBuildFile; fileRef = F8BEF31335C33111D1A3FC49 /* post-update.sample */; };
+		9E5F31D236F0EF2D7358F39F /* pre-push.sample in Resources */ = {isa = PBXBuildFile; fileRef = F9A48B4FAEF75F5BD82EFA97 /* pre-push.sample */; };
+		A7BF8BDB3F76219A38A69D82 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.idx in Resources */ = {isa = PBXBuildFile; fileRef = 1AA1424644CD599DD8B007A6 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.idx */; };
+		AE44ADA91D1B122F544BD881 /* settings.local.json in Resources */ = {isa = PBXBuildFile; fileRef = 6746271435E45FBFCD23253D /* settings.local.json */; };
+		AEC9751B9C2C2A0DD02D4F71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9BDDB05557F9D5B3FFE5D87 /* Preview Assets.xcassets */; };
+		AF6B1EC7A6C59686F801156F /* FlyingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924CCAC8ED3A625895D1E718 /* FlyingNumber.swift */; };
+		C4212A73EE913858502FA760 /* pre-rebase.sample in Resources */ = {isa = PBXBuildFile; fileRef = 8E55A4E6A5693D1BADEAEB19 /* pre-rebase.sample */; };
+		C76380BC81AE7AC1AADE925A /* sendemail-validate.sample in Resources */ = {isa = PBXBuildFile; fileRef = B5517423783820C7D497C34B /* sendemail-validate.sample */; };
+		CAD72D24E145D1784304D9F4 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B41F11667AB8A1A4B1E78 /* MemoryGame.swift */; };
+		D50A5D8E021EF9073AA5218D /* push-to-checkout.sample in Resources */ = {isa = PBXBuildFile; fileRef = 6AA81A083E092CD0B3F43D13 /* push-to-checkout.sample */; };
+		D5732597EEAA96CED613D41B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C38B614B9C0CD5BBF6AA5FD /* Assets.xcassets */; };
+		D5A02EF5B8AC8E8CE7E4F4C4 /* MundialGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617A39B59BB519CC2DD27897 /* MundialGameView.swift */; };
+		DF1EB8A222ABAD82EAD7756D /* fsmonitor-watchman.sample in Resources */ = {isa = PBXBuildFile; fileRef = 2D1CCFC79F07999A3DDEDCDE /* fsmonitor-watchman.sample */; };
+		EC706A74170647FF8A30B499 /* MemorizwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C471D7CF9A729B614BD67C96 /* MemorizwiftApp.swift */; };
+		F96CA3F4B56E6ABBFBF23100 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.pack in Resources */ = {isa = PBXBuildFile; fileRef = A7CF7DD908F53B65549C7459 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.pack */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0325F20ED4A3BA473121F6EF /* packed-refs */ = {isa = PBXFileReference; path = "packed-refs"; sourceTree = "<group>"; };
+		092199F5931A15E217EEAF76 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.rev */ = {isa = PBXFileReference; path = "pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.rev"; sourceTree = "<group>"; };
+		0E7EBA85CCF83EEA2FADA557 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		14973FBD47327B2B8B548B34 /* update.sample */ = {isa = PBXFileReference; path = update.sample; sourceTree = "<group>"; };
+		179FCBE6E16C21B1A38BC813 /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		1AA1424644CD599DD8B007A6 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.idx */ = {isa = PBXFileReference; path = "pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.idx"; sourceTree = "<group>"; };
+		1F979EE53764F8487A242045 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
+		24282306713BC3319BF6BC81 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
+		2B9C28E302DC75E6D8412ABC /* applypatch-msg.sample */ = {isa = PBXFileReference; path = "applypatch-msg.sample"; sourceTree = "<group>"; };
+		2BFCB85C0066F684DC95FE70 /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		2D1CCFC79F07999A3DDEDCDE /* fsmonitor-watchman.sample */ = {isa = PBXFileReference; path = "fsmonitor-watchman.sample"; sourceTree = "<group>"; };
+		3D8328FB5A8A7491A90849EF /* main */ = {isa = PBXFileReference; path = main; sourceTree = "<group>"; };
+		41F868A8BBBB4730ABE274B2 /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		4760CF3E766AD489739A8F5C /* .gitignore */ = {isa = PBXFileReference; path = .gitignore; sourceTree = "<group>"; };
+		4B8B41F11667AB8A1A4B1E78 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		4C38B614B9C0CD5BBF6AA5FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57645FCE272EBAC5ABAF450D /* index */ = {isa = PBXFileReference; path = index; sourceTree = "<group>"; };
+		617A39B59BB519CC2DD27897 /* MundialGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MundialGameView.swift; sourceTree = "<group>"; };
+		6746271435E45FBFCD23253D /* settings.local.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = settings.local.json; sourceTree = "<group>"; };
+		6AA81A083E092CD0B3F43D13 /* push-to-checkout.sample */ = {isa = PBXFileReference; path = "push-to-checkout.sample"; sourceTree = "<group>"; };
+		7AA844AC44846D43D6268822 /* pre-commit.sample */ = {isa = PBXFileReference; path = "pre-commit.sample"; sourceTree = "<group>"; };
+		8E55A4E6A5693D1BADEAEB19 /* pre-rebase.sample */ = {isa = PBXFileReference; path = "pre-rebase.sample"; sourceTree = "<group>"; };
+		924CCAC8ED3A625895D1E718 /* FlyingNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingNumber.swift; sourceTree = "<group>"; };
+		963AB1676A118743D8C1F89C /* Memorizwift.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Memorizwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BAE7783AD7BC14FC576A896 /* commit-msg.sample */ = {isa = PBXFileReference; path = "commit-msg.sample"; sourceTree = "<group>"; };
+		9E59A3E2497187F18ECC4AD4 /* pre-merge-commit.sample */ = {isa = PBXFileReference; path = "pre-merge-commit.sample"; sourceTree = "<group>"; };
+		9FABC4A06BA0B20638CC62A0 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		A7CF7DD908F53B65549C7459 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.pack */ = {isa = PBXFileReference; path = "pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.pack"; sourceTree = "<group>"; };
+		ADEF97036E32581BF603F78A /* exclude */ = {isa = PBXFileReference; path = exclude; sourceTree = "<group>"; };
+		B5517423783820C7D497C34B /* sendemail-validate.sample */ = {isa = PBXFileReference; path = "sendemail-validate.sample"; sourceTree = "<group>"; };
+		B5D48F22501C727D314A58CC /* pre-receive.sample */ = {isa = PBXFileReference; path = "pre-receive.sample"; sourceTree = "<group>"; };
+		C471D7CF9A729B614BD67C96 /* MemorizwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizwiftApp.swift; sourceTree = "<group>"; };
+		D4F487BF5BD2071839F5936C /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		DFB8F626BC567FDA5E833BDA /* HEAD */ = {isa = PBXFileReference; path = HEAD; sourceTree = "<group>"; };
+		E72DB4D0DBBBFB7D73DBDF38 /* description */ = {isa = PBXFileReference; path = description; sourceTree = "<group>"; };
+		E7AFB0027BD04F44E64187AF /* prepare-commit-msg.sample */ = {isa = PBXFileReference; path = "prepare-commit-msg.sample"; sourceTree = "<group>"; };
+		E996610D4A6229732E642DF5 /* main */ = {isa = PBXFileReference; path = main; sourceTree = "<group>"; };
+		E9A0E9850347874258D67F55 /* config */ = {isa = PBXFileReference; path = config; sourceTree = "<group>"; };
+		E9BDDB05557F9D5B3FFE5D87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2FB3852FB7EDB8D62B91AFD /* pre-applypatch.sample */ = {isa = PBXFileReference; path = "pre-applypatch.sample"; sourceTree = "<group>"; };
+		F8BEF31335C33111D1A3FC49 /* post-update.sample */ = {isa = PBXFileReference; path = "post-update.sample"; sourceTree = "<group>"; };
+		F9A48B4FAEF75F5BD82EFA97 /* pre-push.sample */ = {isa = PBXFileReference; path = "pre-push.sample"; sourceTree = "<group>"; };
+		FA921958A1BB968F3DEA946B /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0A2EB0047B7E0C892E7E863E /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				40312542371E1BA9B1C854B2 /* pack */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		1228F447BFD972070D7C7273 /* heads */ = {
+			isa = PBXGroup;
+			children = (
+				E996610D4A6229732E642DF5 /* main */,
+			);
+			path = heads;
+			sourceTree = "<group>";
+		};
+		28058338C03ADE6055D21C6E /* refs */ = {
+			isa = PBXGroup;
+			children = (
+				1228F447BFD972070D7C7273 /* heads */,
+				59AF1A9247C17A54A5F12E2B /* remotes */,
+			);
+			path = refs;
+			sourceTree = "<group>";
+		};
+		2816859D6302FC75F4B5191F /* .claude */ = {
+			isa = PBXGroup;
+			children = (
+				6746271435E45FBFCD23253D /* settings.local.json */,
+			);
+			path = .claude;
+			sourceTree = "<group>";
+		};
+		40312542371E1BA9B1C854B2 /* pack */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1424644CD599DD8B007A6 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.idx */,
+				A7CF7DD908F53B65549C7459 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.pack */,
+				092199F5931A15E217EEAF76 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.rev */,
+			);
+			path = pack;
+			sourceTree = "<group>";
+		};
+		553BF66DAD2AA0B5657C060A /* Memoria-del-Mundial */ = {
+			isa = PBXGroup;
+			children = (
+				4760CF3E766AD489739A8F5C /* .gitignore */,
+				D4F487BF5BD2071839F5936C /* AspectVGrid.swift */,
+				4C38B614B9C0CD5BBF6AA5FD /* Assets.xcassets */,
+				1F979EE53764F8487A242045 /* Cardify.swift */,
+				0E7EBA85CCF83EEA2FADA557 /* CardView.swift */,
+				24282306713BC3319BF6BC81 /* EmojiMemoryGame.swift */,
+				FA921958A1BB968F3DEA946B /* EmojiMemoryGameView.swift */,
+				924CCAC8ED3A625895D1E718 /* FlyingNumber.swift */,
+				C471D7CF9A729B614BD67C96 /* MemorizwiftApp.swift */,
+				4B8B41F11667AB8A1A4B1E78 /* MemoryGame.swift */,
+				617A39B59BB519CC2DD27897 /* MundialGameView.swift */,
+				9FABC4A06BA0B20638CC62A0 /* Pie.swift */,
+				2816859D6302FC75F4B5191F /* .claude */,
+				D07B78D16DC81921CDC45F81 /* .git */,
+				87F3445FA9E6591C1DFD7406 /* Preview Content */,
+			);
+			name = "Memoria-del-Mundial";
+			path = .;
+			sourceTree = "<group>";
+		};
+		59AF1A9247C17A54A5F12E2B /* remotes */ = {
+			isa = PBXGroup;
+			children = (
+				A4EA9D31ABAE77221725AA6E /* origin */,
+			);
+			path = remotes;
+			sourceTree = "<group>";
+		};
+		6556D9ADA2773B3D53C58B6F /* origin */ = {
+			isa = PBXGroup;
+			children = (
+				DFB8F626BC567FDA5E833BDA /* HEAD */,
+			);
+			path = origin;
+			sourceTree = "<group>";
+		};
+		87F3445FA9E6591C1DFD7406 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E9BDDB05557F9D5B3FFE5D87 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FB7CD802A354759171471C5 /* refs */ = {
+			isa = PBXGroup;
+			children = (
+				A39AF1C01574FD1F8572FF00 /* heads */,
+				E6918228FE8E890B80496B45 /* remotes */,
+			);
+			path = refs;
+			sourceTree = "<group>";
+		};
+		9FD452FBCD636BC5DC8A001B /* hooks */ = {
+			isa = PBXGroup;
+			children = (
+				2B9C28E302DC75E6D8412ABC /* applypatch-msg.sample */,
+				9BAE7783AD7BC14FC576A896 /* commit-msg.sample */,
+				2D1CCFC79F07999A3DDEDCDE /* fsmonitor-watchman.sample */,
+				F8BEF31335C33111D1A3FC49 /* post-update.sample */,
+				F2FB3852FB7EDB8D62B91AFD /* pre-applypatch.sample */,
+				7AA844AC44846D43D6268822 /* pre-commit.sample */,
+				9E59A3E2497187F18ECC4AD4 /* pre-merge-commit.sample */,
+				F9A48B4FAEF75F5BD82EFA97 /* pre-push.sample */,
+				8E55A4E6A5693D1BADEAEB19 /* pre-rebase.sample */,
+				B5D48F22501C727D314A58CC /* pre-receive.sample */,
+				E7AFB0027BD04F44E64187AF /* prepare-commit-msg.sample */,
+				6AA81A083E092CD0B3F43D13 /* push-to-checkout.sample */,
+				B5517423783820C7D497C34B /* sendemail-validate.sample */,
+				14973FBD47327B2B8B548B34 /* update.sample */,
+			);
+			path = hooks;
+			sourceTree = "<group>";
+		};
+		A39AF1C01574FD1F8572FF00 /* heads */ = {
+			isa = PBXGroup;
+			children = (
+				3D8328FB5A8A7491A90849EF /* main */,
+			);
+			path = heads;
+			sourceTree = "<group>";
+		};
+		A4EA9D31ABAE77221725AA6E /* origin */ = {
+			isa = PBXGroup;
+			children = (
+				179FCBE6E16C21B1A38BC813 /* HEAD */,
+			);
+			path = origin;
+			sourceTree = "<group>";
+		};
+		A799B01F8AAE9583E90D8AFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963AB1676A118743D8C1F89C /* Memorizwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFB42FF72479A210269CA776 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				ADEF97036E32581BF603F78A /* exclude */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		D07B78D16DC81921CDC45F81 /* .git */ = {
+			isa = PBXGroup;
+			children = (
+				E9A0E9850347874258D67F55 /* config */,
+				E72DB4D0DBBBFB7D73DBDF38 /* description */,
+				2BFCB85C0066F684DC95FE70 /* HEAD */,
+				57645FCE272EBAC5ABAF450D /* index */,
+				0325F20ED4A3BA473121F6EF /* packed-refs */,
+				9FD452FBCD636BC5DC8A001B /* hooks */,
+				CFB42FF72479A210269CA776 /* info */,
+				D78BF8232FE33407E94131A4 /* logs */,
+				0A2EB0047B7E0C892E7E863E /* objects */,
+				28058338C03ADE6055D21C6E /* refs */,
+			);
+			path = .git;
+			sourceTree = "<group>";
+		};
+		D78BF8232FE33407E94131A4 /* logs */ = {
+			isa = PBXGroup;
+			children = (
+				41F868A8BBBB4730ABE274B2 /* HEAD */,
+				9FB7CD802A354759171471C5 /* refs */,
+			);
+			path = logs;
+			sourceTree = "<group>";
+		};
+		E550B140EA475D49E58DA6E0 = {
+			isa = PBXGroup;
+			children = (
+				2816859D6302FC75F4B5191F /* .claude */,
+				D07B78D16DC81921CDC45F81 /* .git */,
+				553BF66DAD2AA0B5657C060A /* Memoria-del-Mundial */,
+				87F3445FA9E6591C1DFD7406 /* Preview Content */,
+				A799B01F8AAE9583E90D8AFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6918228FE8E890B80496B45 /* remotes */ = {
+			isa = PBXGroup;
+			children = (
+				6556D9ADA2773B3D53C58B6F /* origin */,
+			);
+			path = remotes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D15DB018CA893BC11A834E6 /* Memorizwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B0B68FEFE5D40A00BC796C4 /* Build configuration list for PBXNativeTarget "Memorizwift" */;
+			buildPhases = (
+				B75698C5384EE84A4E152524 /* Sources */,
+				E5EC5C7DB0B378BAD507B6A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Memorizwift;
+			packageProductDependencies = (
+			);
+			productName = Memorizwift;
+			productReference = 963AB1676A118743D8C1F89C /* Memorizwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC9B2C8D7855710F21B3B8E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					7D15DB018CA893BC11A834E6 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 2F8E097255DDE27EE2DC12B4 /* Build configuration list for PBXProject "Memorizwift" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E550B140EA475D49E58DA6E0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A799B01F8AAE9583E90D8AFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D15DB018CA893BC11A834E6 /* Memorizwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5EC5C7DB0B378BAD507B6A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5732597EEAA96CED613D41B /* Assets.xcassets in Resources */,
+				AEC9751B9C2C2A0DD02D4F71 /* Preview Assets.xcassets in Resources */,
+				446CA7DEE354E67E506088B2 /* applypatch-msg.sample in Resources */,
+				6B9CC00419F1BC0082FFA6B0 /* commit-msg.sample in Resources */,
+				DF1EB8A222ABAD82EAD7756D /* fsmonitor-watchman.sample in Resources */,
+				A7BF8BDB3F76219A38A69D82 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.idx in Resources */,
+				F96CA3F4B56E6ABBFBF23100 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.pack in Resources */,
+				15674E78B045A2DFE4C08A46 /* pack-d0c92962aef5e94f1f10c154c3d8ab4016ce7062.rev in Resources */,
+				971F1E43380BCE57A9197AA0 /* post-update.sample in Resources */,
+				0535D52D73FD9CC18E521F0B /* pre-applypatch.sample in Resources */,
+				5A08D2E95420C1875115AAF2 /* pre-commit.sample in Resources */,
+				4D0689553A67A52FE84A9513 /* pre-merge-commit.sample in Resources */,
+				9E5F31D236F0EF2D7358F39F /* pre-push.sample in Resources */,
+				C4212A73EE913858502FA760 /* pre-rebase.sample in Resources */,
+				73FCBA8B3797B4BBAD631ED7 /* pre-receive.sample in Resources */,
+				34404C9D472D3592A9EA3A96 /* prepare-commit-msg.sample in Resources */,
+				D50A5D8E021EF9073AA5218D /* push-to-checkout.sample in Resources */,
+				C76380BC81AE7AC1AADE925A /* sendemail-validate.sample in Resources */,
+				AE44ADA91D1B122F544BD881 /* settings.local.json in Resources */,
+				3776D7891CAE79DB81E3A931 /* update.sample in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B75698C5384EE84A4E152524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474F29A8872E8049A5B15C23 /* AspectVGrid.swift in Sources */,
+				1CB9C5A1A62D54B253297E71 /* CardView.swift in Sources */,
+				3F48C32146DB22809E8506C7 /* Cardify.swift in Sources */,
+				2C236FC40E68EA29F43316B1 /* EmojiMemoryGame.swift in Sources */,
+				337D3ADB2DEE201DDDD8DA61 /* EmojiMemoryGameView.swift in Sources */,
+				AF6B1EC7A6C59686F801156F /* FlyingNumber.swift in Sources */,
+				EC706A74170647FF8A30B499 /* MemorizwiftApp.swift in Sources */,
+				CAD72D24E145D1784304D9F4 /* MemoryGame.swift in Sources */,
+				D5A02EF5B8AC8E8CE7E4F4C4 /* MundialGameView.swift in Sources */,
+				55148892968DDCE2EAF5534B /* Pie.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		739FB5BA7B446F74AF237967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gael.Memorizwift;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBFA875D77B52DBAD40812ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gael.Memorizwift;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC373990E61A292AF879766E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FEEA708CD9ECECE1EBF607D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F8E097255DDE27EE2DC12B4 /* Build configuration list for PBXProject "Memorizwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEEA708CD9ECECE1EBF607D5 /* Debug */,
+				EC373990E61A292AF879766E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9B0B68FEFE5D40A00BC796C4 /* Build configuration list for PBXNativeTarget "Memorizwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739FB5BA7B446F74AF237967 /* Debug */,
+				EBFA875D77B52DBAD40812ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC9B2C8D7855710F21B3B8E8 /* Project object */;
+}

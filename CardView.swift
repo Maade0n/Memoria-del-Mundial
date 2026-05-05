@@ -58,7 +58,8 @@ extension Animation {
 }
 
 #Preview {
-    VStack {
+    typealias Card = MemoryGame<String>.Card
+    return VStack {
         HStack {
             CardView(Card(isFaceUp: true, content: "X", id: "test1"))
             CardView(Card(content: "X", id: "test1"))
