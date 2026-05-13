@@ -1,28 +1,63 @@
-# Node helper files (used solo for generating .docx files)
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# CocoaPods / Carthage
+Pods/
+Carthage/Build/
+
+# Claude Code / agent tooling
+.claude/
+.cursor/
+settings.local.json
+
+# Node / docx tooling (used solo para generar archivos .docx, no es parte del Swift app)
 node_modules/
-package.json
 package-lock.json
+package.json
+generate_tarea1.js
+patch_docs.py
 *.html
 *.js
 
-# Generated docx and PNG mockups (no son parte del proyecto Swift)
+# Generated documents
 *.docx
+*.pdf
 *.png
-
-# Carpetas temporales del workspace
+ss03_unpacked/
+ss04_unpacked/
 tarea2_unpacked/
 tarea2.md
-
-# macOS / Xcode
-.DS_Store
-xcuserdata/
-*.xcuserstate
-DerivedData/
-build/
+SS03_source.*
+SS04_source.*
+ss04_text.md
 
 # Entornos
 .env
 .env.local
 
-# Claude Code session state
-.claude/
+# OS / Editor
+Thumbs.db
+.vscode/
+.idea/
