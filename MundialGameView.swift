@@ -300,6 +300,7 @@ struct GameSessionView: View {
         HStack(spacing: 20) {
             StatBadge(title: "Movimientos", value: "\(game.moves)", color: .blue)
             StatBadge(title: "Parejas", value: "\(game.matchedPairs)/\(game.totalPairs)", color: .purple)
+            StatBadge(title: "Tiempo", value: game.formattedTime, color: .green)
 
             Button(action: handleRestart) {
                 Image(systemName: "arrow.clockwise.circle.fill")
@@ -380,7 +381,7 @@ struct GameSessionView: View {
                     .font(.title3)
                     .foregroundColor(.white)
 
-                Text("Movimientos: \(game.moves)")
+                Text("Movimientos: \(game.moves)  •  Tiempo: \(game.formattedTime)")
                     .font(.body)
                     .foregroundColor(.white)
 
@@ -516,6 +517,42 @@ private var mexicanFlagGradient: LinearGradient {
     )
 }
 
+// MARK: - Animación de volteo de carta
+
+private struct MundialCardify: ViewModifier, Animatable {
+    var rotation: Double
+
+    init(isFaceUp: Bool) {
+        rotation = isFaceUp ? 0 : 180
+    }
+
+    var isFaceUp: Bool { rotation < 90 }
+
+    var animatableData: Double {
+        get { rotation }
+        set { rotation = newValue }
+    }
+
+    func body(content: Content) -> some View {
+        let shape = RoundedRectangle(cornerRadius: GameConstants.Layout.cardCornerRadius)
+        ZStack {
+            shape.fill(.white)
+            shape.strokeBorder(lineWidth: 2).foregroundColor(.blue)
+            content.opacity(isFaceUp ? 1 : 0)
+            shape.fill(
+                LinearGradient(colors: [.blue, .purple],
+                               startPoint: .topLeading,
+                               endPoint: .bottomTrailing)
+            ).opacity(isFaceUp ? 0 : 1)
+            Text("⚽")
+                .font(.system(size: 25))
+                .foregroundColor(.white)
+                .opacity(isFaceUp ? 0 : 1)
+        }
+        .rotation3DEffect(.degrees(rotation), axis: (0, 1, 0))
+    }
+}
+
 // MARK: - Vista de Carta
 
 struct MundialCardView: View {
@@ -523,36 +560,11 @@ struct MundialCardView: View {
     var reduceMotion: Bool = false
 
     var body: some View {
-        ZStack {
-            let shape = RoundedRectangle(cornerRadius: GameConstants.Layout.cardCornerRadius)
-
-            if card.isFaceUp {
-                shape.fill(.white)
-                shape.strokeBorder(lineWidth: 2)
-                    .foregroundColor(.blue)
-                Text(card.content)
-                    .font(.system(size: 35))
-                    .minimumScaleFactor(0.5)
-            } else if card.isMatched {
-                shape.opacity(0)
-            } else {
-                shape.fill(
-                    LinearGradient(
-                        colors: [.blue, .purple],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
-                Text("⚽")
-                    .font(.system(size: 25))
-                    .foregroundColor(.white)
-            }
-        }
-        .opacity(card.isMatched ? 0.5 : 1.0)
-        .rotation3DEffect(
-            .degrees(reduceMotion ? 0 : (card.isFaceUp ? 0 : 0)),
-            axis: (x: 0, y: 1, z: 0)
-        )
+        Text(card.content)
+            .font(.system(size: 35))
+            .minimumScaleFactor(0.5)
+            .modifier(MundialCardify(isFaceUp: card.isFaceUp))
+            .opacity(card.isMatched ? 0.3 : 1.0)
     }
 }
 
@@ -575,8 +587,16 @@ class MundialMemoryGame: ObservableObject {
     @Published private(set) var mascotMessage: String = "¡Vamos a jugar!"
     @Published private(set) var currentTip: String = ""
     @Published private(set) var isNewRecord: Bool = false
+    @Published private(set) var elapsedSeconds: Int = 0
 
     let difficulty: GameDifficulty
+    private var gameTimer: Timer?
+
+    var formattedTime: String {
+        let m = elapsedSeconds / 60
+        let s = elapsedSeconds % 60
+        return m > 0 ? "\(m):\(String(format: "%02d", s))" : "\(s)s"
+    }
 
     private let worldCupSymbols = ["⚽", "🏆", "🥇", "⭐", "🎯", "👟", "🌍", "🎊"]
 
@@ -637,6 +657,12 @@ class MundialMemoryGame: ObservableObject {
         isNewRecord = false
         mascotMessage = "¡Vamos a jugar!"
         currentTip = educationalTips.randomElement() ?? "¡Diviértete aprendiendo!"
+
+        gameTimer?.invalidate()
+        elapsedSeconds = 0
+        gameTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+            self?.elapsedSeconds += 1
+        }
     }
 
     func choose(_ card: MundialGameCard) {
@@ -656,6 +682,7 @@ class MundialMemoryGame: ObservableObject {
 
                 if matchedPairs == totalPairs {
                     DispatchQueue.main.asyncAfter(deadline: .now() + GameConstants.Timing.winOverlayDelay) {
+                        self.gameTimer?.invalidate()
                         self.isNewRecord = ScorePersistence.saveIfBetter(self.moves, for: self.difficulty)
                         self.isGameWon = true
                     }
